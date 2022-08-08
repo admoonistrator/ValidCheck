@@ -29,5 +29,8 @@ import co.yw.sol.validator.Vali;
 @Controller
 public class SpController {
 	
+	@PostMapping("/login")
+	public String user(HttpSession session)
+		session.setAttribute("id", id);
 
 }
